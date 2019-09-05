@@ -36,22 +36,22 @@ Na pasta do projeto, digite:
 
 1. Criar um novo projeto console:
 Na pasta do projeto, digite:
--    dotnet new console
+> -    dotnet new console
 
 Digite:
--    code .           (Para abrir o projeto no Visual Studio Code)
+> -    code .           (Para abrir o projeto no Visual Studio Code)
 
 2. No terminal, digitar:
--    dotnet add package Microsoft.EntityFrameworkCore.SqlServer
--    dotnet add package Microsoft.EntityFrameworkCore.Tools 
+> -    dotnet add package Microsoft.EntityFrameworkCore.SqlServer
+> -    dotnet add package Microsoft.EntityFrameworkCore.Tools 
 
     Será adicionado o driver do banco MSSQL Server e a lib de geração de entidades do .net core, respectivamente.
 
 3. No terminal, digitar:
--    dotnet restore    - (opcional) util para baixar dependências (libs)
--    dotnet build      - (opcional) Verifica se há um erro de código
+> -    dotnet restore    - (opcional) util para baixar dependências (libs)
+> -    dotnet build      - (opcional) Verifica se há um erro de código
 e
--    dotnet run        - para rodar o projeto
+> -    dotnet run        - para rodar o projeto
 
 
 #### (Aula 2 - EAD) Geração de tabelas a partir de implementaçao das classes
@@ -69,27 +69,27 @@ Seguir a sequência de passos:
 </ItemGroup>
 
 3. Digite:
--    dotnet restore
+> -    dotnet restore
 
 4. Para as demais etapas, considere o código contido nesse repositório:
     - 4.1. Crie uma pasta Modelos e implemente as classes Turma.cs e Aluno.cs, conforme consta na especificação
     - 4.2. Nessa mesma pasta, crie uma classe TurmaContext.cs e implemente seu código
 
 5. Execute pelo terminal:
-- dotnet ef migrations add TabelasIniciais    (Gera o versionamento das tabelas)
-- dotnet ef database update                   (Efetua o versionamento no banco, gerando/alterando as tabelas)
+> - dotnet ef migrations add TabelasIniciais    (Gera o versionamento das tabelas)
+> - dotnet ef database update                   (Efetua o versionamento no banco, gerando/alterando as tabelas)
 
 6. Modifique o arquivo Program.cs, criando objetos e interagindo com eles. Observe o que acontece no banco de dados.
 - Para executar:
-    - dotnet restore
-    - dotnet build
-    - dotnet run
+>    - dotnet restore
+>    - dotnet build
+>    - dotnet run
 
 #### (Aula 3 - EAD) - Modificando e interagindo com objetos
 
 7. Experimente fazer modificações nas classes, e efetue os comandos para persistir as alterações:
-- dotnet ef migrations add <Nome da Migracao>
-- dotnet ef database update 
+> - dotnet ef migrations add <Nome da Migracao>
+> - dotnet ef database update 
 
 ### Conclusao:
 
