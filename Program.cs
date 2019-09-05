@@ -1,4 +1,5 @@
 ﻿using System;
+using projetoIntegrador2019_ef.Modelos;
 
 namespace projetoIntegrador2019_ef
 {
@@ -6,7 +7,15 @@ namespace projetoIntegrador2019_ef
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            using (var bd = new TurmaContext()) {
+                var Turma = new Turma {
+                     Ano = 2019,
+                     Curso = "SI"
+                };
+                bd.Add(Turma);
+                bd.SaveChanges();
+                Console.WriteLine(" Inclusao realizada!");
+            }
         }
     }
 }
