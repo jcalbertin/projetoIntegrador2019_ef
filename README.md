@@ -14,12 +14,12 @@ Posteriormente, será utilizado de dentro de uma Web API.
 - Cliente de acesso ao BD de sua escolha
 
 ### Etapas para rodar o projeto a partir desse repositorio:
-'''
+
 Na pasta do projeto, digite:
-    dotnet restore
-    dotnet build
-    dotnet run
-'''
+>    dotnet restore
+>    dotnet build
+>    dotnet run
+
 
 ### Etapas de criaçao do projeto do ZERO:
 
