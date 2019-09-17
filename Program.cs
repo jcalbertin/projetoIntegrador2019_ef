@@ -14,6 +14,7 @@ namespace projetoIntegrador2019_ef
                      Ano = 2019,
                      Curso = "SI"
                 };
+                
                 bd.Add(Turma);
                 bd.SaveChanges();
 

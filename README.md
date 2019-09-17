@@ -88,7 +88,7 @@ Seguir a sequência de passos:
 #### (Aula 3 - EAD) - Modificando e interagindo com objetos
 
 7. Experimente fazer modificações nas classes, e efetue os comandos para persistir as alterações:
-> - dotnet ef migrations add <Nome da Migracao>
+> - dotnet ef migrations add < Nome da Migracao >
 > - dotnet ef database update 
 
 ### Conclusao:
