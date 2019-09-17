@@ -62,11 +62,11 @@ Seguir a sequência de passos:
 
 1. Abra o arquivo projetoIntegrador2019_ef.csproj
 
-2. Adicione o seguinte trecho XML antes do fechamento da TAG </Project>:
+2. Adicione o seguinte trecho XML antes do fechamento da TAG < /Project >:
 
-<ItemGroup>
-    <DotNetCliToolReference Include="Microsoft.EntityFrameworkCore.Tools.DotNet" Version="2.0.1" />
-</ItemGroup>
+> <ItemGroup>
+>    <DotNetCliToolReference Include="Microsoft.EntityFrameworkCore.Tools.DotNet" Version="2.0.1" />
+> </ItemGroup>
 
 3. Digite:
 > -    dotnet restore
