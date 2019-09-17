@@ -17,7 +17,7 @@ Pesquise sobre os conceitos envolvidos neste hands-on.
 - .Net Core 2.2
 - Visual Studio Code
 - Plugins:
-    - C# for Visuaal Sudio Code (powered by OminSharp)
+    - C# for Visual Sudio Code (powered by OminiSharp)
     - C# IDE Extensions (jchannon)
 - MS SQL Server ou MySQL 
 - Cliente de acesso ao BD de sua escolha
@@ -60,17 +60,6 @@ Nesse etapa, utilizando Code First fazemos a geração das tabelas e colunas por
 Será indroduzido o conceito do ORM, Migrations utilizando o framework EF Core.
 Seguir a sequência de passos:
 
-1. Abra o arquivo projetoIntegrador2019_ef.csproj
-
-2. Adicione o seguinte trecho XML antes do fechamento da TAG < /Project >:
-
-> <ItemGroup>
->    <DotNetCliToolReference Include="Microsoft.EntityFrameworkCore.Tools.DotNet" Version="2.0.1" />
-> </ItemGroup>
-
-3. Digite:
-> -    dotnet restore
-
 4. Para as demais etapas, considere o código contido nesse repositório:
     - 4.1. Crie uma pasta Modelos e implemente as classes Turma.cs e Aluno.cs, conforme consta na especificação
     - 4.2. Nessa mesma pasta, crie uma classe TurmaContext.cs e implemente seu código
@@ -93,4 +82,4 @@ Seguir a sequência de passos:
 
 ### Conclusao:
 
-Veja que o .Net Core versiona suas alterações no banco, permite realizar operações usando OO e evoluir o sistema, apenas modificando classes e objetos.
+Veja que o .Net Core versiona suas alterações no banco, permite realizar operações usando OO e evolui o sistema, apenas modificando classes e objetos.
